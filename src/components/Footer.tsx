@@ -9,16 +9,16 @@ const Footer = () => {
         <h1 className='text-2xl font-bold'>Caio Corrêa</h1>
 
         <div className='flex space-x-6 mt-4'>
-            <a href='#' className='hover:text-gray-300'>
+            <a href='https://www.linkedin.com/in/caiocorrêa/' className='hover:text-gray-300'>
                 <FaLinkedin size={24}/>
             </a>
-            <a href='#' className='hover:text-gray-300'>
+            <a href='https://discord.gg/GcYzdWXx' className='hover:text-gray-300'>
                 <FaDiscord size={24}/>
             </a>
-            <a href='#' className='hover:text-gray-300'>
+            <a href='https://www.instagram.com/caiiocorrea' className='hover:text-gray-300'>
                 <FaInstagram size={24}/>
             </a>
-            <a href='#' className='hover:text-gray-300'>
+            <a href='https://github.com/caiozyy' className='hover:text-gray-300'>
                 <FaGithub size={24}/>
             </a>
         </div>

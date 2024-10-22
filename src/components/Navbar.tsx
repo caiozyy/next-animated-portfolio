@@ -7,21 +7,21 @@ import { motion } from "framer-motion";
 const navLinks = [
     { title: "About", path: "#about" },
     { title: "Portfolio", path: "#portfolio" },
-
+    { title: "Curriculo", path: "/Curriculo Caio Correa Silva.pdf" }
 ];
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false)
+    const [nav, setNav] = useState(false);
 
     const toggleNav = () => {
-        setNav(!nav)
+        setNav(!nav);
     }
 
     const closeNav = () => {
-        setNav(false)
+        setNav(false);
     }
 
-    const menuVariants ={
+    const menuVariants = {
         open: {
             x: 0,
             transition: {
@@ -44,7 +44,7 @@ const Navbar = () => {
                 <ul className="flex flex-row p-4 space-x-8">
                     {navLinks.map((link, index) => (
                         <li key={index}>
-                            <Link href={link.path}>
+                            <Link href={link.path} onClick={closeNav} target={link.title === "Curriculo" ? "_blank" : undefined}>
                                 <p>{link.title}</p>
                             </Link>
                         </li>
@@ -52,13 +52,10 @@ const Navbar = () => {
 
                     <li>
                         <a href="#contact" className="group">
-                            <h1 className="text-lg font-bold text-white/70 cursor-pointer">Contact Me</h1>
+                            <h1 className="text-lg font-bold text-white/70 cursor-pointer whitespace-nowrap">Contact Me</h1>
                             <div className="relative">
-                                <div className="absolute w-2/3 h-1 transition-all duration-300 ease-out
-                                 bg-orange-400 rounded-full grupo-hover:w-full"></div>
-
-                                <div className="mt-1 absolute w-1/3 h-1 transition-all duration-300 ease-out
-                                bg-orange-600 rounded-full grupo-hover:w-full"></div>
+                                <div className="absolute w-2/3 h-1 transition-all duration-300 ease-out bg-cyan-800 rounded-full group-hover:w-full"></div>
+                                <div className="mt-1 absolute w-1/3 h-1 transition-all duration-300 ease-out bg-sky-300 rounded-full group-hover:w-full"></div>
                             </div>
                         </a>
                     </li>
@@ -66,7 +63,7 @@ const Navbar = () => {
             </div>
 
             <div onClick={toggleNav} className="md:hidden absolute top-5 right-5 border rounded text-white/70 border-white/50 p-2 z-50">
-                {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30}/>}
+                {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
             </div>
 
             <motion.div
@@ -78,19 +75,15 @@ const Navbar = () => {
                 <ul className="text-4xl font-semibold my-24 text-center space-y-8">
                     {navLinks.map((link, index) => (
                         <li key={index}>
-                            <Link href={link.path} onClick={closeNav}>
+                            <Link href={link.path} onClick={closeNav} target={link.title === "Curriculo" ? "_blank" : undefined}>
                                 {link.title}
                             </Link>
                         </li>
                     ))}
                 </ul>
-
-
             </motion.div>
-
-
         </div>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;
