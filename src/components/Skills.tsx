@@ -29,7 +29,7 @@ const Skills = () => {
                     {skillIcons.map((skill, index) => (
                         <div
                             key={index}
-                            className='h-[160px] w-[160px] md:h-[170px] md:w-[170px] flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl'>
+                            className='h-[160px] w-[160px] md:h-[120px] md:w-[120px] flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl'>
                             {skill.icon}
                             <p className='mt-2'>{skill.label}</p>
                         </div>
