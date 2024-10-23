@@ -8,8 +8,8 @@ import profilepic from '../assets/profilecaio.jpg';
 const Hero = () => {
     return (
         <div className='py-24 relative overflow-clip bg-[linear-gradient(to_bottom,#000,#0c4a6e_35%,#7dd3fc_60%,#a5f3fc_80%)]'>
-            <div className="absolute rounded-[50%] w-[3000px] h-[1300px] top-[550px] left-[50%] -translate-x-1/2
-                        bg-[radial-gradient(closest-side,#000_80%,#0c4a6e)]"></div>
+            <div className="absolute rounded-[50%] w-[3000px] h-[1300px] top-[400px] left-[50%] -translate-x-1/2
+                        bg-[radial-gradient(closest-side,#000_90%,#0c4a6e)]"></div>
 
             <div className="relative">
                 <div className='text-8xl font-bold text-center'>

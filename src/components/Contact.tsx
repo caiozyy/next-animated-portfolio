@@ -14,11 +14,11 @@ const Contact = () => {
             <ul className='flex flex-col-reverse'> 
               <li className='flex items-center'> 
                  <p className='text-xl'>+55 61 98347-7928</p>
-                 <Image src={phone} alt='Phone' className='h-[30px] w-auto  ml-6'/>
+                 <Image src={phone} alt='Phone' className='h-[30px] w-auto  ml-6 hidden md:block'/>
               </li>
               <li className='flex items-center'>
                  <p className='text-xl'>contato.caiocorrea@gmail.com</p>
-                 <Image src={mail} alt='email' className='h-[30px] w-auto ml-6'/>
+                 <Image src={mail} alt='email' className='h-[30px] w-auto ml-6 hidden md:block'/>
               </li>
           </ul>
             <form className='space-y-4 mt-6' action="https://getform.io/f/bqongyrb" method='POST'>
