@@ -12,7 +12,7 @@ const About = () => {
         <div className='max-w-[1200px] mx-auto' id="about">
 
             <h1 className='text-white text-6xl max-w-[320px] mx-auto font-semibold p-4 mb-4'>
-                About <span className='text-cyan-800'>Me</span>
+                Sobre <span className='text-cyan-800'>Mim</span>
             </h1>
 
 
@@ -23,7 +23,7 @@ const About = () => {
                     <div className='flex flex-row p-6'>
                         <Image src={book} alt='book' className='w-auto h-[130px]' />
                         <div className='flex flex-col mt-4'>
-                            <h2 className='text-2xl font-bold text-white/80'>Education</h2>
+                            <h2 className='text-2xl font-bold text-white/80'>Formação</h2>
                             <p className='text-lg text-white/70 mt-2'> Atualmente estou cursando o 4º semestre do curso de Análise e Desenvolvimento de Sistemas na Universidade IESB - Brasília.</p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ const About = () => {
                     <div className='flex flex-row p-6'>
                         <Image src={pc} alt='pc' className='w-auto h-[130px]' />
                         <div className='flex flex-col mt-4'>
-                            <h2 className='text-2xl font-bold text-white/80'>Problem-Solving</h2>
+                            <h2 className='text-2xl font-bold text-white/80'>Competência</h2>
                             <p className='text-lg text-white/70 mt-2'> Tenho grande criatividade, boa comunicação e habilidades analíticas</p>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ const About = () => {
                     <div className='flex flex-row p-6'>
                         <Image src={card} alt='card' className='w-auto h-[130px]' />
                         <div className='flex flex-col mt-4'>
-                            <h2 className='text-2xl font-bold text-white/80'>Experience</h2>
+                            <h2 className='text-2xl font-bold text-white/80'>Experiencia</h2>
                             <p className='text-lg text-white/70 mt-2'>Tenho um portfólio diversificado de projetos.</p>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ const About = () => {
                     <div className='flex flex-row p-6'>
                         <Image src={finance} alt='finance' className='w-auto h-[130px]' />
                         <div className='flex flex-col mt-4'>
-                            <h2 className='text-2xl font-bold text-white/80'>Technical-Skills</h2>
+                            <h2 className='text-2xl font-bold text-white/80'>Habilidades</h2>
                             <p className='text-lg text-white/70 mt-2'> Estou aprendendo inglês, atualmente em nível intermediário, e tenho experiência com SQL, Javascript, React, Next, Typescript, HTML, CSS, análise de dados, visualização de dados.</p>
                         </div>
                     </div>

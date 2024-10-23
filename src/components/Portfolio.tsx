@@ -2,21 +2,21 @@
 import React from 'react'
 import Image from "next/image";
 import { motion } from 'framer-motion';
-import proj1 from "../assets/proj1.jpg";
+import blogImg from '../assets/blogapp.png'
 import proj2 from "../assets/proj2.jpg";
 import proj3 from "../assets/proj3.png"
 
 const projects = [
     {
-        title: "Blog App",
-        desc: "Esse projeto é uma aplicação para criação e gerenciamento de posts de blog, permitindo que usuários registrem-se, publiquem conteúdo e interajam através de comentários.",
-        devStack: "Next.js, Tailwind, React.js, MongoDB",
+        title: "Blogger",
+        desc: "Esse projeto é uma aplicação para criação e gerenciamento de posts de blog, permitindo que usuários registrem-se, publiquem conteúdo e se informem sobre matérias importantes. Saiba mais no Git. ",
+        devStack: "Next.js, Tailwind, React.js, MongoDB, API REST",
         link: "#",
         git: "https://github.com/caiozyy/Blog-App",
-        src: proj1
+        src: blogImg
     },
     {
-        title: "EM BREVE",
+        title: "",
         desc: "",
         devStack: "",
         link: "#",
@@ -40,7 +40,7 @@ const Portfolio = () => {
         <div className='text-white bg-gradient-to-b from-black to-[#0c4a6e_80%] py-18 mt-52' id='portfolio'>
 
             <h1 className='text-white text-6xl max-w-[320px] mx-auto font-semibold my-12'>
-                Selected <span className='text-cyan-800'> Projects</span>
+                Projetos <span className='text-cyan-800'> Selecionados</span>
             </h1>
 
             <div className='px-6 md:px-0 max-w-[1000px] mx-auto mt-40 space-y-24'>

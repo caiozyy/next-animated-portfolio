@@ -9,7 +9,7 @@ const Contact = () => {
                     rounded-lg space-y-8 lg:space-y-0 lg:space-x-8' id='contact'>
             
             <div className='bg-black p-7 rounded-xl max-w-[1000px]'>
-            <h2 className='text-5xl font-bold text-sky-200 mb-4'>Let&#39;s connect</h2>
+            <h2 className='text-5xl font-bold text-sky-200 mb-4'>Entre em Contato</h2>
             <p className='text-white/70 mb-6'>Envie-me uma mensagem e vamos agendar uma ligação</p>
             <ul className='flex flex-col-reverse'> 
               <li className='flex items-center'> 

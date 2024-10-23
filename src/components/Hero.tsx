@@ -29,16 +29,16 @@ const Hero = () => {
                         draggable="false"
                     />
                 </motion.div>
-                
+
                 <p className="text-center text-xl max-w-[500px] mx-auto mt-8 text-white/80">
-                Um dedicado Desenvolvedor Back-End, procurando atuar como Analista de Dados e Banco de Dados.
+                    Um dedicado Desenvolvedor Back-End, procurando atuar como Analista de Dados e Banco de Dados.
                 </p>
 
                 {/* Ajustando a imagem de perfil */}
                 <Image
                     src={profilepic}
                     alt="profile picture"
-                    className="w-[30rem] h-[30rem] rounded-full mt-12 mx-auto"
+                    className="w-[30rem] h-[30rem] sm:w-[20rem] sm:h-[20rem] rounded-full mt-12 mx-auto object-cover"
                 />
 
                 <div className='flex justify-center items-center space-x-8 mt-10'>

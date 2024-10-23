@@ -23,15 +23,15 @@ const skillIcons = [
 const Skills = () => {
     return (
         <div className='bg-[linear-gradient(to_top,#000,#0c4a6e_70%)] py-32'>
-            <div className='text-white w-[400px] md:min-w-[950px] mx-auto p-8 text-center'>
-                <h2 className='text-6xl font-bold mb-4 text-sky-200'> Skills</h2>
+            <div className='text-white w-[90%] max-w-[400px] md:max-w-[950px] mx-auto p-8 text-center'>
+                <h2 className='text-6xl font-bold mb-4 text-sky-200'>Skills</h2>
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
                     {skillIcons.map((skill, index) => (
                         <div
                             key={index}
                             className='h-[160px] w-[160px] md:h-[170px] md:w-[170px] flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl'>
-                                {skill.icon}
-                                <p className='mt-2'>{skill.label}</p>
+                            {skill.icon}
+                            <p className='mt-2'>{skill.label}</p>
                         </div>
                     ))}
                 </div>
